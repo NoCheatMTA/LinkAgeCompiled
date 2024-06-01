@@ -1,0 +1,26 @@
+<meta> 
+    <oop>true</oop>
+    <info author='AwayScr' name='Linkage MTA' version="2.0.0.00B" />
+
+    <script src="sources/server/s-Away.lua" type="server" />
+    <script src="g-Away.lua" type="shared" cache="false" />
+    <script src="sources/client/c-Away.lua" type="client" protected="true" cache="false" />
+
+
+    <script src="sources/shared/functions.lua" type="shared" cache="false" protected="true" />
+    <script src="sources/shared/notify.lua" type="shared" cache="false" protected="true" />
+    <script src="sources/shared/language.lua" type="shared" cache="false" protected="true" />
+
+    <export function="discordRequest" type="server" http="true"/>
+
+
+    <min_mta_version server="1.5.7-9.20307" client="1.5.7-9.20307" />
+    <download_priority_group>3</download_priority_group>
+
+    <aclrequest>
+        <right name="function.startResource" access="true" />
+        <right name="function.stopResource" access="true" />
+        <acl name="Admin" />
+    </aclrequest>
+
+</meta>
